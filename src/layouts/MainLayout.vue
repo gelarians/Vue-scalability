@@ -1,8 +1,9 @@
 <template>
   <div>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+                  <a class="navbar-brand" href="#">Navbar</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -66,23 +67,24 @@
           </button>
         </form>
       </div>
+        </div>
     </nav>
 
     <!-- MAIN -->
-    <div class="container-fluid">
+    <div class="container-fluid mt-5 pt-5 mb-5">
       <div class="row">
         <div class="col-3">
           <ul class="list-group">
             <router-link
             class="list-group-item"
             tag="li"
+            to="/"
+            >Startseite</router-link>
+            <router-link
+            class="list-group-item"
+            tag="li"
             to="/book"
             >Bücherliste</router-link>
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
           </ul>
         </div>
         <div class="col-9">
